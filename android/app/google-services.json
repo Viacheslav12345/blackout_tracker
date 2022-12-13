@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "999193712857",
+    "project_id": "blackout-track",
+    "storage_bucket": "blackout-track.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999193712857:android:22c3065400090b5d2986c8",
+        "android_client_info": {
+          "package_name": "com.example.blackout_track"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999193712857-k2vm53lmpapn3quclm5n2198acg2dt8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blackout_track",
+            "certificate_hash": "64612af7c844609d5b67e082c50a64b80793746e"
+          }
+        },
+        {
+          "client_id": "999193712857-r79bsiqq0ndfdc7qqtjcpu5odgumiedl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjqD2BJDBUBcVOheFGN8ApXZh0GgVje-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999193712857-r79bsiqq0ndfdc7qqtjcpu5odgumiedl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
