@@ -1,16 +1,28 @@
-# blackout_track
+# Д/З до уроку 7: Blackout tracker
 
-A new Flutter project.
+## Виконано наступні завдання:
+Зроблено застосунок який раз на годину зберігає наступну інформацію:
+- дату та час
+- відсоток зарядки
+- чи заряджається девайс зараз
+- чи підключений до wifi
+- чи є інтернет
 
-## Getting Started
+Інформація зберігається до persistent store (sharedpreferences). Додатково, якщо є інтернет, застосунок зберігає цю інформацію онлайн до firebase.
 
-This project is a starting point for a Flutter application.
+Застосунок має UI, що дозволяе переглядати список подій. Внизу екрану є 3 кнопки для запуску/перезапуску трекера, його зупинки та очищення (видалення) історії подій як з пам'яті телефону так і з хмарного сховища Firestore.
+<p float="left">
+    <img src="https://user-images.githubusercontent.com/101039162/207276086-d027d856-d013-4e3c-9b8e-7700d0f5668c.jpg" alt="Preview" height="500px"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+Для виконання періодичних подій (збереження інформації) раз на годину використовується workmanager.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Для перевірки відсотку заряду батареї та її стану (чи заряджається?) використовується бібліотека battery_plus.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Для перевірки чи є Wi-Fi використовується бібліотека connectivity_plus.
+
+Для перевірки чи є інтернет надсилається запит на публічний ресурс (facebook).
+
+<p float="left">
+    <img src="https://user-images.githubusercontent.com/101039162/207276750-b170758e-6e4e-4f55-8c6d-b4adb9e8217d.jpg" alt="Preview" height="500px"/>
+</p>
