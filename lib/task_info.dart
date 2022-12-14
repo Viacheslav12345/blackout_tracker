@@ -60,7 +60,7 @@ class TaskInfo {
 
     try {
       final response =
-          await client.get(uri).timeout(const Duration(seconds: 5));
+          await client.get(uri).timeout(const Duration(seconds: 3));
 
       if (response.statusCode == 200) {
         _internet = "з'єднання є";
