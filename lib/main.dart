@@ -43,12 +43,12 @@ class MyApp extends StatelessWidget {
 }
 
 Future _doTheWork() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+
   await taskInfo.getTime();
   await taskInfo.batteryInfo();
   await taskInfo.checkConnect();
   await taskInfo.checkInternet();
-
-  SharedPreferences prefs = await SharedPreferences.getInstance();
 
   prefs.setStringList(taskInfo.currentTime, taskInfo.info);
 
@@ -64,7 +64,7 @@ void callbackDispatcher() {
       case 'blackoutTask':
         await _doTheWork();
         break;
-      // default:
+      default:
     }
     return Future.value(true);
   });
